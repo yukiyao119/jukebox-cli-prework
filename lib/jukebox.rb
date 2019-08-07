@@ -42,7 +42,7 @@ def play(songs)
     binding.pry 
     if response == song
       puts "Playing #{response}"
-    elsif response.class == "Number"
+    elsif response.class == Integer
       puts "Playing #{songs[response-1]}"
     else
       puts "Invalid input, please try again"
