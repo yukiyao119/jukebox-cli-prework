@@ -42,7 +42,7 @@ def play(songs)
     # binding.pry 
     if response == song
       puts "Playing #{response}"
-      binding.pry
+      # binding.pry
     elsif response.class == Integer
       puts "Playing #{songs[response-1]}"
       binding.pry 
