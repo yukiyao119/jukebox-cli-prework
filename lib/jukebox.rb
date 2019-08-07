@@ -41,7 +41,7 @@ def play(songs)
   # binding.pry
   songs.each do |song|
     # binding.pry 
-    if response.to_i.between?(1..songs.length)
+    if response.to_i.between?(1,songs.length)
       puts "Playing #{songs[response.to_i-1]}"
     elsif response == song
       puts "Playing #{response}"
