@@ -43,7 +43,7 @@ def play(songs)
     # binding.pry 
     if number.include?(response.to_i)
       puts "Playing #{songs[response.to_i-1]}"
-      binding.pr
+      binding.pry
     end 
     if response == "i"
       puts "Playing #{songs[response-1]}"
