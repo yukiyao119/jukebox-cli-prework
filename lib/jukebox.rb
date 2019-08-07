@@ -63,7 +63,6 @@ def run
   help
   puts "Please enter a command:"
   response = gets.strip
-    
   if response == "help"
     help
   elsif response == "list"
@@ -73,7 +72,7 @@ def run
   elsif response == "exit"
     exit_jukebox
   else
-    
+    puts "Invalid input, please try again"
   end
 end 
 
