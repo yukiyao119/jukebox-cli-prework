@@ -36,7 +36,7 @@ songs = [
 ]
 
 def play(songs)
-  number = [1..songs.length]
+  number = (1..songs.length)
   puts "Please enter a song name or number:"
   response = gets.strip
   binding.pry
