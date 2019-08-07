@@ -38,8 +38,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   response = gets.strip
   songs.each.with_index(1) do |song, i|
-    if response == song || response == rand(1..9)
-      puts "Playing <song name>"
+    if response == song
+      puts "Playing #{response}"
     else 
       puts "Invalid input, please try again"
     end 
