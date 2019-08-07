@@ -38,7 +38,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   response = gets.strip
   songs.collect do |song|
-    # if response == song || response == rand(1..9)
+    if response == song || response == rand(1..9)
       puts "Playing <song name>"
     else 
       puts "Invalid input, please try again"
