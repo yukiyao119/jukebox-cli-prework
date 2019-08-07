@@ -74,6 +74,7 @@ def run
       help
     else 
       exit_jukebox
+  end
 end 
 
 
