@@ -66,15 +66,12 @@ def run
     
   if response == "help"
     help
-  until response == "exit"
-    puts "Please enter a command:"
-    if response == "list"
-      list
-    elsif response == "play"
-      play(songs)
-
-    else 
-      exit_jukebox
+  elsif response == "list"
+    list
+  elsif response == "play"
+    play(songs)
+  else 
+    exit_jukebox
   end
 end 
 
