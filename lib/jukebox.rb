@@ -65,7 +65,7 @@ def run(songs)
   if response == "help"
     help
   elsif response == "list"
-    list
+    list(songs)
   elsif response == "play"
     play(songs)
   elsif response == "exit"
