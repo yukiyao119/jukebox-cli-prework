@@ -45,7 +45,7 @@ def play(songs)
       puts "Playing #{songs[response.to_i-1]}"
       binding.pry
     end 
-    if response == "i"
+    if response
       puts "Playing #{songs[response-1]}"
       binding.pry
     else
