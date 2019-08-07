@@ -1,3 +1,4 @@
+require 'pry'
 # Add your code here
 # def say_hello(name)
 #   "Hi #{name}!"
@@ -37,7 +38,8 @@ songs = [
 def play(songs)
   puts "Please enter a song name or number:"
   response = gets.strip
-  songs.each.with_index(1) do |song, i|
+  songs.each_with_index do |song, i|
+    binding.pry 
     if response == song
       puts "Playing #{response}"
     elsif response.class == "Number"
