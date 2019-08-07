@@ -70,8 +70,10 @@ def run
     list
   elsif response == "play"
     play(songs)
-  else 
+  elsif response == "exit"
     exit_jukebox
+  else
+    
   end
 end 
 
