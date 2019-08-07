@@ -40,7 +40,9 @@ def play(songs)
   songs.each.with_index(1) do |song, i|
     if response == song
       puts "Playing #{response}"
-    else 
+    elsif response.class == number
+      puts "Playing #{songs[response-1]}"
+    else
       puts "Invalid input, please try again"
     end 
   end
