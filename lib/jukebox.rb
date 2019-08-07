@@ -43,11 +43,14 @@ def play(songs)
     # binding.pry 
     if response.to_i.between?(1,songs.length)
       puts "Playing #{songs[response.to_i-1]}"
+      return 
     elsif response == song
       puts "Playing #{response}"
+      return 
       # binding.pry
     else
       puts "Invalid input, please try again"
+      return 
     end 
   end
 end 
