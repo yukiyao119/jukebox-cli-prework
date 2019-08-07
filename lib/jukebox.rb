@@ -36,16 +36,19 @@ songs = [
 ]
 
 def play(songs)
+  number = [1..songs.length]
   puts "Please enter a song name or number:"
   response = gets.strip
+  binding.pry
   songs.each_with_index do |song, i|
     # binding.pry 
     if response == song
       puts "Playing #{response}"
-      # binding.pry
-    elsif response.class == Integer
+      # binding.pr
+    end 
+    if response == "i"
       puts "Playing #{songs[response-1]}"
-      binding.pry 
+      binding.pry
     else
       puts "Invalid input, please try again"
     end 
